@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# MedSync
+O projeto aporta a ideia de desenvolver um projeto web de agendamento de consultas em uma clínica pediátrica. O modelo web prioriza 
+uma interface clara e objetiva, na qual o usuário tem acesso a agenda dos médicos. Considerando a seguinte aplicação, o usuário tem 
+a liberdade de escolher o melhor dia e horário que esteja vago para ser atendido pelo médico escolhido.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Com uma interface intuitiva, o MedSync permitirá:
+  - Agendar consultas rapidamente;
+  - Gerenciar horários de forma eficiente;
+  - Acesso seguro com autenticação;
+  - Experiência simplificada para médicos e pacientes.
 
-## Available Scripts
+O projeto explora as seguintes tecnologias 
+  - Protótipo: Figma | https://www.figma.com/design/dXYr0pZcivGla5FqEZlu7M/MedSync?node-id=0-1&t=xuBF85ODqzFKkprE-1
+  - FrontEnd: React, JavaScript visando uma interface dinâmica e responsiva; 
+  - Backend: Node.js, CRUD, leve e eficiente para o nosso desenvolvimento; 
+  - Banco de dados: MySQL, adequado para o armazenamento de dados estruturado; 
+  - Monolítica: Formato ideal para o nosso projeto, priorizando a simplicidade do desenvolvimento.
+  - Autenticação: JWT (JSON Web Tokens) para segurança, recomendado para autenticação em aplicações web 
+  - Deploy:
 
-In the project directory, you can run:
+Operações CRUD 
+  - Create: Criar agendamento na clínica, permitindo a seleção por doutor/especialidade;
+  - Read: Visualização do agendamento realizado;
+  - Update: Alteração do horário agendado, não permitindo alteração de especialidade;
+  - Delete: Deletar o agendamento.
 
-### `npm start`
+Requisitos Funcionais:  
+  - Login e registro de pacientes, para autenticação dos usuários; 
+  - Visualização da agenda dos médicos, por parte do paciente; 
+  - Seleção de horários disponíveis; 
+  - Confirmação de agendamento (redirecionamento para WhatsApp);
+  - Cancelamento de consultas agendadas (redirecionamento para WhatsApp);
+  - Acesso às informações do médico: agenda, especialização, CRM. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Requisitos não funcionais  
+  - Proteção de dados sensíveis (LGPD compliance);
+  - Tempo de resposta rápido para agendamentos e consultas;
+  - Suporte a múltiplos usuários simultaneamente;
+  - Capacidade de adicionar novos médicos e pacientes sem impactar o desempenho. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Ferramenta para controle de atividades:
+- https://statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html
 
-### `npm test`
+Frontend: 
+  - Desenvolvimento das telas de login, registro, agendamento e perfil.
+  - Integração com a API do backend.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Backend: 
+  - Criação das APIs para autenticação, agendamento e gerenciamento de perfis.
+  - Integração com o banco de dados.
 
-### `npm run build`
+Banco de Dados: 
+  - Modelagem do banco de dados (tabelas de usuários, médicos, consultas).
+  - Configuração e deploy do banco. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Testes: 
+  - Testes unitários e de integração.
+  - Correção de bugs. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Documentação: 
+  - Documentação do código e do projeto.
+  - Atualização do repositório no GitHub. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  - Ajustes sugeridos - primeira interação 24/02
+Não foram feitas alterações significativas em relação ao projeto inicial apresentado pela equipe. O projeto foi aceito pelo Professor
+orientador com entusiasmo, levando em consideração o protótipo do Figma apresentado.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  - Ajustes sugeridos - segunda interação 10/03
