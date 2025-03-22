@@ -19,30 +19,31 @@ O projeto explora as seguintes tecnologias
   - Deploy:
 
 Operações CRUD 
-  - Create: Criar agendamento na clínica, permitindo a seleção por doutor/especialidade;
-  - Read: Visualização do agendamento realizado;
-  - Update: Alteração do horário agendado, não permitindo alteração de especialidade;
-  - Delete: Deletar o agendamento.
+  - Create: Adicionar cadastro de novo médico;
+  - Read: Visualização dos pacientes dos horários disponíveis/indisponíveis; 
+  - Update: Atualizar cadastro do médico;
+  - Delete: Deletar cadastro do médico;
+  - Delete adicional: Deletar a agendamento do paciente.  
 
 Requisitos Funcionais:  
-  - Login e registro de pacientes, para autenticação dos usuários; 
+  - Login de secretárias, para autenticação dos usuários;  
   - Visualização da agenda dos médicos, por parte do paciente; 
   - Seleção de horários disponíveis; 
   - Confirmação de agendamento (redirecionamento para WhatsApp);
   - Cancelamento de consultas agendadas (redirecionamento para WhatsApp);
-  - Acesso às informações do médico: agenda, especialização, CRM. 
+  - Acesso às informações do médico: agenda, especialização, CRM.
+  - Alterações de informações referente aos médicos por parte das secretárias. 
 
 Requisitos não funcionais  
   - Proteção de dados sensíveis (LGPD compliance);
   - Tempo de resposta rápido para agendamentos e consultas;
   - Suporte a múltiplos usuários simultaneamente;
-  - Capacidade de adicionar novos médicos e pacientes sem impactar o desempenho. 
 
 Ferramenta para controle de atividades:
 - https://statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html
 
 Frontend: 
-  - Desenvolvimento das telas de login, registro, agendamento e perfil.
+  - Desenvolvimento das telas de login, registro, agendamento e atendimento. 
   - Integração com a API do backend.
 
 Backend: 
@@ -66,3 +67,7 @@ Não foram feitas alterações significativas em relação ao projeto inicial ap
 orientador com entusiasmo, levando em consideração o protótipo do Figma apresentado.
 
   - Ajustes sugeridos - segunda interação 10/03
+Não foram feitas alterações significativas em relação ao projeto inicial apresentado pela equipe. O projeto foi aceito pelo Professor
+orientador com entusiasmo, levando em consideração o protótipo do Figma apresentado.
+
+Observação: Foi realizada uma alteração de funcionalidades no escopo do projeto no dia 21/03/2025, com o intuito de adiministrar as atividade de acordo com o tempo de desenvolvimento diponível.  
